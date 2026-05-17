@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+venv/
+.env
+
+
+# Environment variables
+.env
+.env.*
+
+# Database files
+queries.db
+*.db
+*.sqlite
+*.sqlite3
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log

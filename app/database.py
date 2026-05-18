@@ -1,10 +1,3 @@
-"""
-SQLite Persistence Layer
-
-Manages local database connections, schema initialisation, and query persistence.
-Provides clean helper functions to decouple database queries from API route handlers.
-"""
-
 import sqlite3
 import json
 from datetime import datetime

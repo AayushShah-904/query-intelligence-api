@@ -1,11 +1,3 @@
-"""
-Application Configuration & Environment Management
-
-This module loads environment variables from a `.env` file and defines the core 
-settings required for the Query Intelligence API to run smoothly. Centralising 
-configuration here makes it easy to manage API keys, database paths, and project metadata.
-"""
-
 import os
 from dotenv import load_dotenv
 
@@ -24,7 +16,7 @@ class Settings:
     PROJECT_VERSION: str = "1.0.0"
     
     # Anthropic API key used to authenticate requests to Claude
-    ANTHROPIC_API_KEY: str = os.environ.get("ANTHROPIC_API_KEY", "")
+    ANTHROPIC_API_KEY: str = os.environ.get("ANTHROPIC_API_KEY")
     
     # File path for the local SQLite database
     DB_PATH: str = os.environ.get("DB_PATH", "queries.db")

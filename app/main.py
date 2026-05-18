@@ -1,10 +1,3 @@
-"""
-Main Application Setup & Initialisation
-
-Configures the core FastAPI application instance, runs startup database initialisation, 
-and registers the API route handlers.
-"""
-
 from fastapi import FastAPI
 from app.config import settings
 from app.database import init_db

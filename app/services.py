@@ -1,10 +1,3 @@
-"""
-LLM Intelligence Extraction Service
-
-Integrates with Anthropic's Claude to transform raw natural language research queries 
-into structured, highly actionable query intelligence.
-"""
-
 import json
 import anthropic
 from app.config import settings
@@ -15,11 +8,7 @@ llm = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
 
 
 def extract_intelligence(query: str) -> QueryIntelligence:
-    """
-    Prompt Claude to extract structured intent, domain, geography, and keywords from a query.
-    
-    Guarantees the output adheres exactly to the QueryIntelligence Pydantic schema.
-    """
+   
     prompt = f"""You are an expert R&D Technology Scout working for an enterprise innovation platform.
 
 A corporate user has submitted the following research query:
